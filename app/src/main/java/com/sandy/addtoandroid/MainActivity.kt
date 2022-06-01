@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //Move this initialization to Application Class
         // Instantiate a FlutterEngine.
         flutterEngine = FlutterEngine(this)
         // Configure an initial route.
