@@ -25,10 +25,7 @@ class MainActivity : AppCompatActivity() {
         book.thumbnail = thumbnail
         books.add(book)
 
-        startActivityForResult(
-            FlutterBookActivity
-                .withBook(this, books[0]), 0
-        )
+        startActivityForResult(FlutterBookActivity.withBook(this, books[0]), 0)
     }
 
     // Callback when the Flutter activity started with 'startActivityForResult' above returns.
