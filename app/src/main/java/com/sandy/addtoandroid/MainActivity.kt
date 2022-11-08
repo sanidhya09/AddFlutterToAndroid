@@ -39,4 +39,9 @@ class MainActivity : AppCompatActivity() {
                 .build(this)
         )
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        flutterEngine!!.destroy()
+    }
 }
